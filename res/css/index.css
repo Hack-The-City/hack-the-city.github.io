@@ -48,3 +48,28 @@ div.head-text {
 
 div.info {
   background-color: white; }
+
+header {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  z-index: 40;
+  text-align: center;
+  bottom: 0;
+}
+
+h4{
+  color: grey;
+  opacity: 1;
+}
+
+#menu{
+  list-style-type: none;
+}
+
+#navBar{
+  display: inline-block;
+  width: 15vw;
+  background-color: white;
+  opacity: 0.5;
+}
