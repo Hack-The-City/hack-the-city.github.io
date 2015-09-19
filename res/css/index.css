@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "KeepCalm";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../res/fonts/KeepCalm-Medium.ttf"); }
+
+/* Splash screen */
+div.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background: red; }
+  div.fullscreen-bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    @media (min-aspect-ratio: 16/9) {
+      div.fullscreen-bg video {
+        height: 300%;
+        top: -100%; } }
+    @media (max-aspect-ratio: 16/9) {
+      div.fullscreen-bg video {
+        width: 300%;
+        left: -100%; } }
+    @media (max-width: 767px) {
+      div.fullscreen-bg video {
+        display: none; } }
+
+div.head-text {
+  font-family: "KeepCalm";
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  text-align: center; }
+  div.head-text h1 {
+    font-size: 15vmin;
+    padding-top: 24vh; }
+  div.head-text h2 {
+    color: #9d0aff; }
+  div.head-text h3 {
+    font-family: 'Open Sans', sans-serif; }
+
+div.info {
+  background-color: white; }
