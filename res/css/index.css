@@ -42,7 +42,11 @@ div.head-text {
     font-size: 15vmin;
     padding-top: 24vh; }
   div.head-text h2 {
-    color: #9d0aff; }
+    color: #9d0aff; 
+    /*text-shadow: 10px 10px 5px #888888;*/
+    text-shadow: 1px 0px 3px #000000;
+    /*color:#DEDA16;*/
+  }
   div.head-text h3 {
     font-family: 'Open Sans', sans-serif; }
 
@@ -61,6 +65,14 @@ header {
 h4{
   color: grey;
   opacity: 1;
+}
+
+div.info{
+  margin: 0px auto;
+  width: 80vw;
+  background-color: white;
+  opacity: 0.95;
+  /*padding-top:50px;*/
 }
 
 #menu{
