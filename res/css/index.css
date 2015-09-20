@@ -40,7 +40,13 @@ div.head-text {
   text-align: center; }
   div.head-text h1 {
     font-size: 15vmin;
-    padding-top: 24vh; }
+    padding-top: 24vh;
+    text-shadow: 1px 2px 5px #000000;
+/*       color: black;
+   -webkit-text-fill-color: white;  Will override color (regardless of order) 
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;*/
+    }
   div.head-text h2 {
     color: #9d0aff; 
     /*text-shadow: 10px 10px 5px #888888;*/
