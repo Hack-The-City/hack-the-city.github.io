@@ -1,0 +1,117 @@
+/* RESET STYLES
+----------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: normal;
+  vertical-align: baseline;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+/* HTML5 RESETS FOR OLDER BROWSERS */
+article, aside, figure, figure img, hgroup, footer, header, nav, section {
+  display: block;
+}
+
+/*ol, ul { list-style: none; }*/
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+input, select { vertical-align: middle; }
+a img { border: 0; }
+:focus { outline: 0; }
+a:hover, a:active { outline: none; }
+
+/* FONT IMPORTS
+----------------------------------------------- */
+
+/* Keep Calm Medium */
+@font-face {
+  font-family: "KeepCalm";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/KeepCalm-Medium.ttf");
+}
+
+/* GENERAL STYLES
+----------------------------------------------- */
+/* Splash screen */
+div.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  background: red;
+}
+
+div.fullscreen-bg video {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  div.fullscreen-bg video {
+    height: 300%;
+    top: -100%; 
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  div.fullscreen-bg video {
+    width: 300%;
+    left: -100%;
+    }
+}
+
+/* ----- SELECTION COLORS ----- */
+
+
+/* PAGE STRUCTURE
+----------------------------------------------- */
+
+/* Splash Screen*/
+
+
+/* WIDE DESKTOP LAYOUT 
+----------------------------------------------- */
+@media only screen and (min-width: 992px) {
+
+} /* CLOSE WIDE LAYOUT */
+
+/* TABLET LAYOUT 
+----------------------------------------------- */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+} /* CLOSE TABLET LAYOUT */
+
+/* WIDE MOBILE LAYOUT (LANDSCAPE/480PX) 
+----------------------------------------------- */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+} /* CLOSE WIDE MOBILE LAYOUT
+/* MOBILE LAYOUT (PORTRAIT/320PX) 
+----------------------------------------------- */
+@media only screen and (max-width: 480px) {
+
+} /* CLOSE MOBILE LAYOUT */
