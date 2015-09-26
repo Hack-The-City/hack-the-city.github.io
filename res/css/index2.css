@@ -58,7 +58,7 @@ div.fullscreen-bg {
   left: 0;
   overflow: hidden;
   z-index: -100;
-  background: red;
+  background: #1c344c;
 }
 
 div.fullscreen-bg video {
@@ -82,6 +82,20 @@ div.fullscreen-bg video {
     width: 300%;
     left: -100%;
     }
+}
+
+div.head-content {
+  font-family: "KeepCalm";
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  text-align: center;
+}
+
+div.head-content h1 {
+  font-size: 15vmin;
+  padding-top: 24vh;
+  /*text-shadow: 1px 2px 5px #000000;*/
 }
 
 /* ----- SELECTION COLORS ----- */
