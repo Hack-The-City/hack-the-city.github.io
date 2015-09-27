@@ -49,9 +49,25 @@ a:hover, a:active { outline: none; }
 
 /* GENERAL STYLES
 ----------------------------------------------- */
+header {
+  position: relative;
+  height: 60px;
+  bottom: 60px;
+  width: 100%;
+  background-color: white;
+  z-index: 40;
+  text-align: center;
+}
+
+/* ----- SELECTION COLORS ----- */
+
+
+/* PAGE STRUCTURE
+----------------------------------------------- */
+
 /* Splash screen */
 div.fullscreen-bg {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -87,45 +103,67 @@ div.fullscreen-bg video {
 div.head-content {
   font-family: "KeepCalm";
   color: white;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(28, 52, 76, 0.6);
   height: 100vh;
   text-align: center;
 }
 
 div.head-content h1 {
-  font-size: 15vmin;
-  padding-top: 24vh;
-  /*text-shadow: 1px 2px 5px #000000;*/
+  font-weight: 800;
 }
 
-/* ----- SELECTION COLORS ----- */
+div.head-content h1, div.head-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  color: #ea2e49;
+}
 
+div.head-content .pure-form input {
+  margin: 0 auto;
+}
 
-/* PAGE STRUCTURE
------------------------------------------------ */
+#menu{
+  list-style-type: none;
+}
 
-/* Splash Screen*/
+#navBar{
+  display: inline-block;
+  width: 15vw;
+  background-color: white;
+  opacity: 0.5;
+}
 
 
 /* WIDE DESKTOP LAYOUT 
 ----------------------------------------------- */
 @media only screen and (min-width: 992px) {
-
+  div.head-content img {width: 35vmin; padding-top: 50px;}
+  div.head-content h1 {font-size: 10vmin; padding-top: 2vh; padding-bottom: 4vh;}
+  div.head-content h2 {font-size: 4vmin;}
 } /* CLOSE WIDE LAYOUT */
 
 /* TABLET LAYOUT 
 ----------------------------------------------- */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
+  div.head-content h1 {color: red;}
+  div.head-content img {width: 35vmin; padding-top: 50px;}
+  div.head-content h1 {font-size: 10vmin; padding-top: 2vh; padding-bottom: 1vh;}
+  div.head-content h2 {font-size: 4vmin;}
 } /* CLOSE TABLET LAYOUT */
 
 /* WIDE MOBILE LAYOUT (LANDSCAPE/480PX) 
 ----------------------------------------------- */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-
+  div.head-content h1 {color: yellow;}
+  div.head-content img {width: 35vmin; padding-top: 50px;}
+  div.head-content h1 {font-size: 10vmin; padding-top: 2vh; padding-bottom: 1vh;}
+  div.head-content h2 {font-size: 4vmin;}
 } /* CLOSE WIDE MOBILE LAYOUT
 /* MOBILE LAYOUT (PORTRAIT/320PX) 
 ----------------------------------------------- */
-@media only screen and (max-width: 480px) {
-
+@media only screen and (max-width: 479px) {
+  div.head-content h1 {color: red;}
+  div.head-content img {width: 35vmin; padding-top: 50px;}
+  div.head-content h1 {font-size: 10vmin; padding-top: 2vh; padding-bottom: 1vh;}
+  div.head-content h2 {font-size: 4vmin;}
 } /* CLOSE MOBILE LAYOUT */

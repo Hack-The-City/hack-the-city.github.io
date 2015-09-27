@@ -1,9 +1,6 @@
   //This creates a better transition then in document ready.
   $(window).load(function() {
-
        $('video').animate({opacity: '1'}, 800);
-
-
   });
 
   var scrollTimeout;
@@ -15,7 +12,6 @@
       scrollTimeout = setTimeout(checkAndMoveNavbarPosition(), 250);
     }
   });
-
 
   var isFixed = false;
   var navbarHeight;
