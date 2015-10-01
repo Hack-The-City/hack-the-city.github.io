@@ -1,10 +1,12 @@
+/*https://coolors.co/app/ea2e49-1c344c-77c4d3-818181-e8e8e8*/
+
 /* RESET STYLES
 ----------------------------------------------- */
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+small, strong, sub, sup, var, dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
@@ -64,6 +66,10 @@ header {
   text-align: center;
 }
 
+footer {
+  background-color: #818181;
+}
+
 /* ----- SELECTION COLORS ----- */
 
 
@@ -117,7 +123,7 @@ div.head-content h1 {
   font-weight: 800;
   font-size: 10vmin;
   padding-top: 2vh;
-  padding-bottom: 1vh;
+  padding-bottom: 4vh;
 }
 
 div.head-content h1, div.head-content h2 {
@@ -168,7 +174,7 @@ header .container a h4 {
 
 /* Content */
 #content {
-  /*background: url(../media/empire.jpg) no-repeat center center fixed; 
+  /*background: url(../media/empire2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -180,12 +186,20 @@ header .container a h4 {
   padding-bottom: 2vh;
   font-size: 50px;
   font-family: 'Montserrat', sans-serif;
-  text-decoration: underline;
 }
 /* About */
 #about {
-  background: rgba(28, 52, 76, 0.6);
+  background-color: #77c4d3;
+  /*background: rgba(119, 196, 211, 0.1);*/
 }
+
+/*#aboutbg {
+  background: url(../media/empire2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+}*/
 
 
 #about p {
@@ -194,10 +208,9 @@ header .container a h4 {
 }
 /* FAQ */
 #faq {
-  margin-top: .5vh;
   display:block;
   overflow:auto;
-  background: rgba(28, 52, 76, 0.6);
+  background-color: #ea2e49;
 }
 
 #faq #element{
@@ -231,11 +244,17 @@ header .container a h4 {
   }
 }
 
+/* Sponsors */
+#sponsors {
+  color: black;
+  background-color: #e8e8e8;
+}
+
 /* WIDE DESKTOP LAYOUT 
 ----------------------------------------------- */
 @media only screen and (min-width: 992px) {
   div.head-content img {width: 35vmin; padding-top: 50px;}
-  div.head-content h1 {padding-bottom: 4vh;}
+  /*div.head-content h1 {padding-bottom: 4vh;}*/
   div.head-content h2 {font-size: 4vmin;}
   #about p {font-size: 30px;}
   .container {width: 962px;}
@@ -244,7 +263,7 @@ header .container a h4 {
 /* TABLET LAYOUT 
 ----------------------------------------------- */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  div.head-content h1 {color: red;}
+  div.head-content h1 {color: red; padding-bottom: 6vh;}
   div.head-content img {width: 35vmin; padding-top: 50px;}
   div.head-content h2 {font-size: 4vmin;}
   #about p {font-size: 20px;}
@@ -254,7 +273,8 @@ header .container a h4 {
 /* WIDE MOBILE LAYOUT (LANDSCAPE/480PX) 
 ----------------------------------------------- */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  div.head-content h1 {color: yellow;}
+  div.head-content h1 {color: yellow; padding-bottom: 8vh;}
+  header .container a h4 {font-size: 12px;}
   div.fullscreen-bg video {display: none}
   div.head-content img {width: 35vmin; padding-top: 50px;}
   div.head-content h2 {font-size: 4vmin;}
@@ -263,9 +283,9 @@ header .container a h4 {
 /* MOBILE LAYOUT (PORTRAIT/320PX) 
 ----------------------------------------------- */
 @media only screen and (max-width: 479px) {
-  div.head-content h1 {color: red;}
+  div.head-content h1 {color: red; padding-bottom: 5vh;}
   div.fullscreen-bg video {display: none}
   div.head-content img {width: 35vmin; padding-top: 50px;}
   div.head-content h2 {font-size: 4vmin;}
-  header .container a {display: none;}
+  header {display: none;}
 } /* CLOSE MOBILE LAYOUT */
