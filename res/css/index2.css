@@ -168,11 +168,11 @@ header .container a h4 {
 
 /* Content */
 #content {
-  background: url(../media/empire.jpg) no-repeat center center fixed; 
+  /*background: url(../media/empire.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 100%;
+  background-size: 100%;*/
 }
 
 #content h1{
