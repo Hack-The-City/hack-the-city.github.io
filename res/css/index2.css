@@ -180,6 +180,7 @@ header .container a h4 {
   padding-bottom: 2vh;
   font-size: 50px;
   font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
 }
 /* About */
 #about {
@@ -193,17 +194,21 @@ header .container a h4 {
 }
 /* FAQ */
 #faqu {
-  margin-top: 2vh;
-  height: 98vh;
+  margin-top: .5vh;
+  height: 100vh;
   background: rgba(28, 52, 76, 0.6);
   /*height: 100vh;*/
 }
 
-#faqu table, th, tr, td{
+#faqu th{
+  max-width: 10vw;
+
+}
+
+#faqu table{
   border-collapse: separate;
-  border-spacing: 10px 50px;
-  /*border: 1px solid black;*/
-  /*background-color:lime;*/
+  border-spacing: 50px 50px;
+  /*margin: 0 auto;*/
 }
 
 #faqu h2{
@@ -211,11 +216,14 @@ header .container a h4 {
   padding-bottom: 8px;
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
+  color:rgb(255, 255, 102);
 }
 
 #faqu p{
   font-size: 20px;
 }
+
+
 
 /* WIDE DESKTOP LAYOUT 
 ----------------------------------------------- */
