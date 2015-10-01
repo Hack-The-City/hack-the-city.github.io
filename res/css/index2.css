@@ -175,21 +175,46 @@ header .container a h4 {
   background-size: 100%;
 }
 
-/* About */
-#about {
-  background: rgba(28, 52, 76, 0.6);
-}
-
-#about h1 {
+#content h1{
   padding-top: 10vh;
   padding-bottom: 2vh;
   font-size: 50px;
   font-family: 'Montserrat', sans-serif;
 }
+/* About */
+#about {
+  background: rgba(28, 52, 76, 0.6);
+}
+
 
 #about p {
   padding-bottom: 10vh;
   text-align: justify;
+}
+/* FAQ */
+#faqu {
+  margin-top: 2vh;
+  height: 98vh;
+  background: rgba(28, 52, 76, 0.6);
+  /*height: 100vh;*/
+}
+
+#faqu table, th, tr, td{
+  border-collapse: separate;
+  border-spacing: 10px 50px;
+  /*border: 1px solid black;*/
+  /*background-color:lime;*/
+}
+
+#faqu h2{
+  padding-top: 5px;
+  padding-bottom: 8px;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#faqu p{
+  font-size: 20px;
 }
 
 /* WIDE DESKTOP LAYOUT 
