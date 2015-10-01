@@ -6,18 +6,21 @@
   var scrollTimeout;
 
 	$(window).on('scroll', function() {
-    console.log("SCROLLING...");
+    // console.log("SCROLLING...");
     if ($(window).width() >= 786) {
       clearTimeout(scrollTimeout);
       scrollTimeout = setTimeout(checkAndMoveNavbarPosition(), 250);
+      recalculateNavbarPosition();
     }
   });
+
 
   var isFixed = false;
   var navbarHeight;
   var deltaLocation;
-  recalculateNavbarPosition();
+
   function checkAndMoveNavbarPosition() {
+    recalculateNavbarPosition();
     if (!isFixed && $(window).scrollTop() > deltaLocation) {
       $('header').css({position: "fixed", top: "0px", bottom: ""});
       isFixed = true;
@@ -29,7 +32,9 @@
     }
   }
 
+
   function recalculateNavbarPosition() {
-    navbarHeight = $('#navbar').outerHeight();
-    deltaLocation = $('#splash').outerHeight() - navbarHeight;
+
+    deltaLocation = $(window).height() - $('navbar').height()-50;
+    // console.log($('#navbar').height());
   }
