@@ -68,6 +68,9 @@ header {
 
 footer {
   background-color: #818181;
+  text-align: center;
+  padding: 30px;
+  word-spacing: 20px;
 }
 
 /* ----- SELECTION COLORS ----- */
@@ -184,7 +187,7 @@ header .container a h4 {
 #content h1{
   padding-top: 10vh;
   padding-bottom: 2vh;
-  font-size: 50px;
+  font-size: 10vmin;
   font-family: 'Montserrat', sans-serif;
 }
 /* About */
@@ -192,15 +195,6 @@ header .container a h4 {
   background-color: #77c4d3;
   /*background: rgba(119, 196, 211, 0.1);*/
 }
-
-/*#aboutbg {
-  background: url(../media/empire2.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: 100%;
-}*/
-
 
 #about p {
   padding-bottom: 10vh;
@@ -211,6 +205,7 @@ header .container a h4 {
   display:block;
   overflow:auto;
   background-color: #ea2e49;
+  padding-bottom: 10vh;
 }
 
 #faq #element{
@@ -248,6 +243,7 @@ header .container a h4 {
 #sponsors {
   color: black;
   background-color: #e8e8e8;
+  padding-bottom: 10vh;
 }
 
 /* WIDE DESKTOP LAYOUT 
@@ -290,4 +286,5 @@ header .container a h4 {
   form.pure-form {padding-top: 5vh;}
   form.pure-form a {margin-top: 2vh;}
   header {display: none;}
+  .container {margin-left: 9px; margin-right: 9px;}
 } /* CLOSE MOBILE LAYOUT */
