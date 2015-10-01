@@ -288,5 +288,6 @@ header .container a h4 {
   div.head-content img {width: 35vmin; padding-top: 50px;}
   div.head-content h2 {font-size: 4vmin;}
   form.pure-form {padding-top: 5vh;}
+  form.pure-form a {margin-top: 2vh;}
   header {display: none;}
 } /* CLOSE MOBILE LAYOUT */
