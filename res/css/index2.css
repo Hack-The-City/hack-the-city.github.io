@@ -225,7 +225,7 @@ header .container a h4 {
 }
 
 /*media queries */
-@media (max-width:700px){
+@media (max-width:770px){
   #faqu #element{
     /*background-color:white;*/
     padding-right:0px;
