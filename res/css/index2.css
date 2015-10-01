@@ -131,7 +131,7 @@ div.head-content h1 {
 
 div.head-content h1, div.head-content h2 {
   font-family: 'Montserrat', sans-serif;
-  padding: 0;
+  padding: 1px 0px 10px;
   color: #ea2e49;
 }
 
@@ -194,6 +194,7 @@ header .container a h4 {
 #about {
   background-color: #77c4d3;
   /*background: rgba(119, 196, 211, 0.1);*/
+  color: #1c344c;
 }
 
 #about p {
@@ -204,8 +205,8 @@ header .container a h4 {
 #faq {
   display:block;
   overflow:auto;
-  /*background-color: #ea2e49;*/
-  background-color: #473899;
+  background-color: #ea2e49;
+  /*background-color: #473899;*/
   padding-bottom: 10vh;
 }
 
