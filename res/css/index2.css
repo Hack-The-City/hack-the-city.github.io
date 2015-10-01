@@ -204,7 +204,8 @@ header .container a h4 {
 #faq {
   display:block;
   overflow:auto;
-  background-color: #ea2e49;
+  /*background-color: #ea2e49;*/
+  background-color: #473899;
   padding-bottom: 10vh;
 }
 
