@@ -1,16 +1,8 @@
 @import 'colors';
 
 video {
+	opacity: 0;
 	width: 100%;
-}
-
-@media(min-aspect-ratio: 16/9) {
-	video {
-		/*height: 300%;*/
-		/*width: 200%;*/
-		/*top: -100%;*/
-	}
-
 }
 
 @media(max-aspect-ratio: 16/9) {
@@ -37,4 +29,55 @@ video {
 	video {
 		display: none;
 	}
+}
+
+button {
+	background-color: $secondary-medium;
+	border: solid 3px $secondary-dark;
+	border-radius: 3em;
+	color: $secondary-background;
+	font-size: 1.2em;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: .02em;
+	padding: .5em 1em;
+	text-transform: uppercase;
+}
+
+input {
+	border: solid 3px $primary-dark;
+	border-radius: 3em;
+	color: $primary-washed;
+	width: 50%;
+	padding: .5em;
+	font-size: 1.2em;
+	background-color: $primary;
+}
+
+::-webkit-input-placeholder {
+	font-family: 'Ubuntu', sans-serif;
+	color: $primary-light;
+	font-style: italic;
+	font-weight: 300;
+}
+
+::-moz-placeholder {
+	font-family: 'Ubuntu', sans-serif;
+	color: $primary-light;
+	font-style: italic;
+	font-weight: 300;
+}
+
+:-moz-placeholder {
+	font-family: 'Ubuntu', sans-serif;
+	color: $primary-light;
+	font-style: italic;
+	font-weight: 300;
+}
+
+:-ms-input-placeholder {
+	font-family: 'Ubuntu', sans-serif;
+	color: $primary-light;
+	font-style: italic;
+	font-weight: 300;
 }

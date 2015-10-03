@@ -1,0 +1,24 @@
+#about { 
+	background-color: $tertiary-background;
+
+	h1 {
+		color: $tertiary-text;
+	}
+	
+	p {
+		font-size: 1.5em;
+	}
+
+	p:last-child {
+		border-top: solid 1px $grey-washed;
+		padding-top: 1.5em;
+		font-size: 1.1em;
+		line-height: 2;
+	}
+}
+
+.descriptor {
+	font-style: italic;
+	color: $secondary-medium;
+	margin-right: .7em;
+}

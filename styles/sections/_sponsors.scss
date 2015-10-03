@@ -1,0 +1,21 @@
+#sponsors {
+	background-color: $secondary-background;
+
+	h1 {
+		color: $secondary-text;
+	}
+}
+
+.list-orgs {
+	border: solid 2px $grey-washed;
+	display: block;
+	padding: 2em;
+	text-align: center;
+
+	p {
+		color: $grey;
+		font-style: italic;
+		padding-bottom: 0;
+	}
+}
+
