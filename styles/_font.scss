@@ -1,4 +1,3 @@
-@import 'colors';
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400italic|Montserrat');
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
@@ -49,9 +48,9 @@ h3 {
 
 p {
 	@extend %text;
+	font-size: 1.2em;
 	line-height: 1.5;
 	padding-bottom: 1em;
-	font-size: 1.2em;
 }
 
 a:link, a:visited {

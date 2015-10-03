@@ -84,9 +84,9 @@ h3 {
   font-size: 1.5em; }
 
 p {
+  font-size: 1.2em;
   line-height: 1.5;
-  padding-bottom: 1em;
-  font-size: 1.2em; }
+  padding-bottom: 1em; }
 
 a:link, a:visited {
   color: #ea2e49; }
@@ -95,28 +95,28 @@ a:hover, a:active {
   color: #1c344c; }
 
 header {
-  position: absolute;
-  bottom: 0;
   background-color: #f9f9f9;
+  bottom: 0;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   display: flex;
+  height: 3em;
   justify-content: space-around;
   opacity: 1;
-  width: 100%;
-  height: 3em;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); }
+  position: absolute;
+  width: 100%; }
   header span {
-    display: flex;
-    align-items: center; }
+    align-items: center;
+    display: flex; }
   header a:link, header a:visited {
-    text-decoration: none;
     color: #22415b;
+    display: inline-block;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
-    text-transform: uppercase;
-    display: inline-block;
-    vertical-align: middle;
     margin-bottom: 0;
-    padding: .3em; }
+    padding: .3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle; }
   header a:hover, header a:active {
     background-color: #e8e8e8; }
   header .active:link, header .active:visited {
@@ -131,9 +131,9 @@ section {
   padding: 10em 3em; }
 
 .content {
+  background-color: #f9f9f9;
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.08);
-  padding: 3em 1.5em;
-  background-color: #f9f9f9; }
+  padding: 3em 1.5em; }
   .content h1 {
     border-bottom: solid 1px #e8e8e8;
     margin-bottom: .5em;
@@ -143,13 +143,13 @@ section {
 
 footer {
   background-color: #f9f9f9;
+  color: #1c344c;
   display: block;
-  padding: 2em;
-  color: #1c344c; }
+  padding: 2em; }
   footer span {
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     width: 200px; }
 
 video {
@@ -179,39 +179,39 @@ button {
   font-style: normal;
   font-weight: 400;
   letter-spacing: .02em;
-  padding: .5em 1em;
+  padding: .5em 2em;
   text-transform: uppercase; }
 
 input {
+  background-color: #22415b;
   border: solid 3px #152838;
   border-radius: 3em;
   color: #3b7696;
-  width: 50%;
-  padding: .5em;
   font-size: 1.2em;
-  background-color: #22415b; }
+  padding: .5em;
+  width: 65%; }
 
 ::-webkit-input-placeholder {
-  font-family: 'Ubuntu', sans-serif;
   color: #2d5977;
+  font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: 300; }
 
 ::-moz-placeholder {
-  font-family: 'Ubuntu', sans-serif;
   color: #2d5977;
+  font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: 300; }
 
 :-moz-placeholder {
-  font-family: 'Ubuntu', sans-serif;
   color: #2d5977;
+  font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: 300; }
 
 :-ms-input-placeholder {
-  font-family: 'Ubuntu', sans-serif;
   color: #2d5977;
+  font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: 300; }
 

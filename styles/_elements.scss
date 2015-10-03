@@ -1,5 +1,3 @@
-@import 'colors';
-
 video {
 	opacity: 0;
 	width: 100%;
@@ -31,6 +29,7 @@ video {
 	}
 }
 
+
 button {
 	background-color: $secondary-medium;
 	border: solid 3px $secondary-dark;
@@ -40,44 +39,44 @@ button {
 	font-style: normal;
 	font-weight: 400;
 	letter-spacing: .02em;
-	padding: .5em 1em;
+	padding: .5em 2em;
 	text-transform: uppercase;
 }
 
 input {
+	background-color: $primary;
 	border: solid 3px $primary-dark;
 	border-radius: 3em;
 	color: $primary-washed;
-	width: 50%;
-	padding: .5em;
 	font-size: 1.2em;
-	background-color: $primary;
+	padding: .5em;
+	width: 65%;
 }
 
 ::-webkit-input-placeholder {
-	font-family: 'Ubuntu', sans-serif;
 	color: $primary-light;
+	font-family: 'Ubuntu', sans-serif;
 	font-style: italic;
 	font-weight: 300;
 }
 
 ::-moz-placeholder {
-	font-family: 'Ubuntu', sans-serif;
 	color: $primary-light;
+	font-family: 'Ubuntu', sans-serif;
 	font-style: italic;
 	font-weight: 300;
 }
 
 :-moz-placeholder {
-	font-family: 'Ubuntu', sans-serif;
 	color: $primary-light;
+	font-family: 'Ubuntu', sans-serif;
 	font-style: italic;
 	font-weight: 300;
 }
 
 :-ms-input-placeholder {
-	font-family: 'Ubuntu', sans-serif;
 	color: $primary-light;
+	font-family: 'Ubuntu', sans-serif;
 	font-style: italic;
 	font-weight: 300;
 }
