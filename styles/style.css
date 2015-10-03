@@ -1,0 +1,373 @@
+/*RESET STYLES*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400italic|Montserrat");
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: normal;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+/* HTML5 RESETS FOR OLDER BROWSERS */
+article, aside, figure, figure img, hgroup, footer, header, nav, section {
+  display: block; }
+
+/*ol, ul { list-style: none; }*/
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+a img {
+  border: 0; }
+
+:focus {
+  outline: 0; }
+
+a:hover, a:active {
+  outline: none; }
+
+@font-face {
+  font-family: "KeepCalm";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/KeepCalm-Medium.ttf"); }
+p, h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  display: block; }
+
+h1 {
+  font-size: 5em; }
+
+h2 {
+  font-size: 3.5em;
+  font-weight: 200; }
+
+h3 {
+  font-size: 1.5em; }
+
+p {
+  line-height: 1.5;
+  padding-bottom: 1em;
+  font-size: 1.2em; }
+
+a:link, a:visited {
+  color: #ea2e49; }
+
+a:hover, a:active {
+  color: #1c344c; }
+
+.video-holder {
+  background-color: #22415b;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -100; }
+
+#video-overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  background-color: #1c344c;
+  opacity: .5;
+  width: 100%;
+  height: 100%; }
+
+#entry-point {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #fff; }
+  #entry-point > div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    align-self: center;
+    padding: 50px;
+    width: 100%;
+    justify-content: center; }
+
+#main-logo {
+  display: inline-block;
+  width: 20%;
+  vertical-align: middle;
+  margin-right: 5%; }
+  #main-logo img {
+    width: 100%; }
+
+#main-details {
+  display: inline-block;
+  vertical-align: middle; }
+
+#main-subscribe {
+  margin-top: 2em;
+  align-self: flex-end; }
+  #main-subscribe p {
+    font-weight: 300;
+    word-spacing: .1em; }
+  #main-subscribe input {
+    border: solid 3px #152838;
+    border-radius: 3em;
+    color: #3b7696;
+    width: 50%;
+    padding: .5em;
+    font-size: 1.2em;
+    background-color: #22415b; }
+  #main-subscribe ::-webkit-input-placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    color: #2d5977;
+    font-style: italic;
+    font-weight: 300; }
+  #main-subscribe ::-moz-placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    color: #2d5977;
+    font-style: italic;
+    font-weight: 300; }
+  #main-subscribe :-moz-placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    color: #2d5977;
+    font-style: italic;
+    font-weight: 300; }
+  #main-subscribe :-ms-input-placeholder {
+    font-family: 'Ubuntu', sans-serif;
+    color: #2d5977;
+    font-style: italic;
+    font-weight: 300; }
+  #main-subscribe .invalid {
+    font-size: 1.2em;
+    background-color: #818181;
+    color: #f2edef;
+    border-radius: 3em;
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: 200;
+    border: solid 3px #515151;
+    padding: .5em 1em; }
+  #main-subscribe .valid {
+    font-size: 1.2em;
+    background-color: #c91739;
+    color: #f2edef;
+    border-radius: 3em;
+    text-transform: lowercase;
+    font-style: normal;
+    font-weight: 200;
+    border: solid 3px #9e1335;
+    padding: .5em 1em; }
+
+header {
+  position: absolute;
+  bottom: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-around;
+  opacity: 1;
+  width: 100%;
+  height: 3em;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1); }
+  header span {
+    display: flex;
+    align-items: center; }
+  header a:link, header a:visited {
+    text-decoration: none;
+    color: #22415b;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    padding: .3em; }
+  header a:hover, header a:active {
+    background-color: #e8e8e8; }
+  header .active:link, header .active:visited {
+    background-color: #dce7ea; }
+
+section {
+  background-color: #f2edef;
+  margin-top: 0em;
+  padding: 10em 3em; }
+
+.content {
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.08);
+  padding: 3em 1.5em;
+  background-color: #f9f9f9; }
+  .content h1 {
+    border-bottom: solid 1px #e8e8e8;
+    margin-bottom: .5em;
+    padding-bottom: .2em; }
+  .content + .content {
+    margin-top: 2em; }
+
+#about {
+  background-color: #e8efef;
+  /*
+  .content {
+  	background-color: $tertiary-washed;
+  }*/ }
+  #about h1 {
+    color: #2a4b4c; }
+  #about p {
+    font-size: 1.5em; }
+  #about p:last-child {
+    border-top: solid 1px #e8e8e8;
+    padding-top: 1.5em;
+    font-size: 1.1em;
+    line-height: 2; }
+
+#faq {
+  background-color: #dce7ea; }
+  #faq h1 {
+    color: #152838;
+    font-size: 4em; }
+
+#sponsors {
+  background-color: #f2edef; }
+  #sponsors h1 {
+    color: #56061d; }
+
+.descriptor {
+  /*font-size: 2em;*/
+  font-style: italic;
+  color: #c91739;
+  margin-right: .7em; }
+
+#faq-table {
+  background-color: #f9f9f9;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 1em .5em 0 .5em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.08); }
+  #faq-table .faq {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 1em;
+    padding: 0em .5em;
+    vertical-align: top;
+    border-right: solid 1px #e8e8e8; }
+    #faq-table .faq:nth-child(3n) {
+      border-right: none; }
+    #faq-table .faq .question {
+      padding-bottom: .2em; }
+    #faq-table .faq .answer {
+      font-size: 1em; }
+
+#faq-table-header {
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #f2edef;
+  color: #c91739;
+  align-content: stretch;
+  border-bottom: solid 1px #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
+  margin-top: 2em; }
+  #faq-table-header span {
+    padding: .5em;
+    flex-grow: 1;
+    display: inline-block;
+    text-transform: capitalize;
+    border-right: 1px solid #fff;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: .05em; }
+  #faq-table-header span:last-child {
+    border-right: none; }
+  #faq-table-header span:hover {
+    background-color: #ea2e49;
+    color: #fff; }
+  #faq-table-header .selected {
+    background-color: #c91739;
+    color: #f2edef; }
+
+.list-orgs {
+  border: solid 2px #e8e8e8;
+  display: block;
+  padding: 2em;
+  text-align: center; }
+  .list-orgs p {
+    color: #818181;
+    font-style: italic;
+    padding-bottom: 0; }
+
+footer {
+  background-color: #f9f9f9;
+  display: block;
+  padding: 2em;
+  color: #1c344c; }
+  footer span {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 200px; }
+
+video {
+  width: 100%; }
+
+@media (min-aspect-ratio: 16 / 9) {
+  video {
+    /*height: 300%;*/
+    /*width: 200%;*/
+    /*top: -100%;*/ } }
+@media (max-aspect-ratio: 16 / 9) {
+  video {
+    width: 100%; } }
+@media (max-width: 1640px) {
+  video {
+    width: 150%;
+    left: 25%; } }
+@media (max-width: 1110px) {
+  video {
+    width: 220%;
+    left: 60%; } }
+@media (max-width: 767px) {
+  video {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */

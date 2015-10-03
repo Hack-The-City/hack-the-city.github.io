@@ -1,0 +1,63 @@
+@import 'colors';
+
+html {
+  color: #E8E8E8;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/* Splash screen */
+.fullscreen-bg {
+  background: $blue;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -100;
+}
+
+.info {
+	background-color: $white;
+	margin: 0 auto;
+	width: 80vw;
+	opacity: .95;
+}
+
+#menu {
+	list-style-type: none;
+}
+
+#navBar {
+	background: $white;
+	display: inline-block;
+	opacity: .5;
+	width: 15vw;
+}
+
+header {
+	background-color: $grey-weak;
+	bottom: 0;
+	height: 60px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 40;
+}
+
+footer {
+	background-color: $grey-regular;
+	padding: 30px;
+	text-align: center;
+	word-spacing: 20px;
+}
+
+
+/*
+* SECTIONS
+*/
+#sponsors {
+	background-color: $grey-weak;
+	color: $black;
+	padding-bottom: 10vh;
+}

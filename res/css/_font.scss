@@ -1,0 +1,42 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400italic|Montserrat');
+
+
+@font-face {
+  font-family: "KeepCalm";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/KeepCalm-Medium.ttf");
+}
+
+.head-text {
+	color: $white;
+	background: rgba(0, 0, 0, .5);
+	font-family: "KeepCalm";
+	height: 100vh;
+	text-align: center;
+
+	&h1 {
+		font-size: 15vmin;
+		padding-top: 24vh;
+		text-shadow: 1px 2px 5px $black;
+	}
+
+	&h2 {
+		color: $purple;
+		text-shadow: 1px 0 3px $black;
+	}
+
+	&h3 {
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	&h4 {
+		color: $grey;
+		opacity: 1;
+	}
+}
+
+.head-content {
+	font-family: "KeepCalm;
+}

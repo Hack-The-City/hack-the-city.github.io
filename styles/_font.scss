@@ -1,0 +1,63 @@
+@import 'colors';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400italic|Montserrat');
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
+
+@font-face {
+  font-family: "KeepCalm";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/KeepCalm-Medium.ttf");
+}
+
+%font {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+%text {
+	@extend %font;
+}
+
+%header {
+	@extend %font;
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@extend %header;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 3.5em;
+	font-weight: 200;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p {
+	@extend %text;
+	line-height: 1.5;
+	padding-bottom: 1em;
+	font-size: 1.2em;
+}
+
+a:link, a:visited {
+	color: $secondary;
+}
+
+a:hover, a:active {
+	color: $primary-medium;
+}

@@ -1,0 +1,40 @@
+@import 'colors';
+
+video {
+	width: 100%;
+}
+
+@media(min-aspect-ratio: 16/9) {
+	video {
+		/*height: 300%;*/
+		/*width: 200%;*/
+		/*top: -100%;*/
+	}
+
+}
+
+@media(max-aspect-ratio: 16/9) {
+	video {
+		width: 100%;
+	}
+}
+
+@media(max-width: 1640px) {
+	video {
+		width: 150%;
+		left: 25%;
+	}
+}
+
+@media(max-width: 1110px) {
+	video {
+		width: 220%;
+		left: 60%;
+	}
+}
+
+@media(max-width: 767px) {
+	video {
+		display: none;
+	}
+}
