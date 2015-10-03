@@ -1,6 +1,8 @@
 (function(){
   initializeNavigation();
   getSectionYPositions();
+
+  initializeInputField();
 })();
 
 function initializeNavigation() {
@@ -51,6 +53,29 @@ function updateMenuOptionSelection() {
   } else {
     selectMenuOption(sponsorsOption);
   }
+}
+
+function initializeInputField() {
+  var input = document.getElementsByTagName("input")[0],
+      submitButton = document.getElementsByTagName("button")[0];
+  
+  input.addEventListener('input', function() {
+    var value = this.value,
+        atSymbolPosition = value.indexOf("@"),
+        hasAtSymbol = atSymbolPosition > 0,
+        hasTextAfterAtSymbol = atSymbolPosition !== value.length - 1;
+        hasDotAfterAtSymbol = value.indexOf(".") > atSymbolPosition;
+
+    if (hasAtSymbol && hasTextAfterAtSymbol && hasDotAfterAtSymbol) {
+      submitButton.disabled = false;
+      submitButton.classList.remove("invalid");
+      submitButton.classList.add("valid");
+    } else {
+      submitButton.disabled = true;
+      submitButton.classList.remove("valid");
+      submitButton.classList.add("invalid");
+    }
+  })
 }
 
 $(window).resize(adjustBanner());
