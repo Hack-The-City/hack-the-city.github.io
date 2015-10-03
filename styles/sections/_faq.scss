@@ -10,8 +10,8 @@
 #faq-table-header {
 	display: flex;
 	font-family: 'Ubuntu', sans-serif;
-	background-color: $secondary-background;
-	color: $secondary-medium;
+	background-color: $complement-background;
+	color: $complement-medium;
 	align-content: stretch;
 	border-bottom: solid 1px $white;
 	box-shadow: 0 0 3px rgba(0, 0, 0, .08);
@@ -34,14 +34,14 @@
 	}
 
 	span:hover {
-		background-color: $secondary;
+		background-color: $complement;
 		color: $white;
 
 	}
 
 	.selected {
-		background-color: $secondary-medium;
-		color: $secondary-background;
+		background-color: $complement-medium;
+		color: $complement-background;
 	}
 }
 

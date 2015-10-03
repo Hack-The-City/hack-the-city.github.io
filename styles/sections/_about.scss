@@ -1,8 +1,8 @@
 #about { 
-	background-color: $tertiary-background;
+	background-color: $accent-background;
 
 	h1 {
-		color: $tertiary-text;
+		color: $accent-text;
 	}
 	
 	p {
@@ -19,6 +19,6 @@
 
 .descriptor {
 	font-style: italic;
-	color: $secondary-medium;
+	color: $complement-medium;
 	margin-right: .7em;
 }
