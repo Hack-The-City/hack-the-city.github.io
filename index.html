@@ -16,167 +16,165 @@
 	<script src="scripts/smoothscroll.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="video-holder">
-			<span id="video-overlay"></span>
-			<video loop muted preload autoplay>
-				<!-- TODO: Cross-browser support: Add source tags for other video types-->
-				<source src="./media/background.mp4" type="video/mp4">
-			</video>
-		</div>
-		<div id="entry-point">
-			<div>
-				<span id="main-logo">
-					<img src="images/logo.svg">
-				</span>
-				<div>
-					<span id="main-details">
-						<h1>Hack The City</h1>
-						<h3>April 9th&mdash;10th</h3>
-						<h3>@ New York University</h3>
-					</span>
-					<form id="main-subscribe">
-						<p>Enter your email to get notified when registration opens up:</p>
-						<input type="email" placeholder="Email address">
-						<button class="invalid" type="submit" disabled>Submit</button>
-					</form>
-				</div>
-			</div>
-		</div>
-
-		<header>
-			<span><a class="smoothScroll" href="#about">About</a></span>
-			<span><a class="smoothScroll" href="#faq">FAQ</a></span>
-			<span><a class="smoothScroll" href="#sponsors">Sponsors</a></span>
-			<span><a class="smoothScroll active" href="#">Register</a></span>
-		</header>
-
-		<section id="about">
-			<div class="content">
-				<h1>About</h1>
-				<p>
-					<span class="descriptor">Who?</span> 500 student hackers.
-				</p>
-				<p>
-					<span class="descriptor">What?</span> A hackathon.
-				</p>
-				<p>
-					<span class="descriptor">Where?</span> At New York University (NYU).
-				</p>
-				<p>
-					<span class="descriptor">When?</span> April 9-10, 2016 (<i>tentative</i>).
-				</p>
-				<p>
-					<!-- I don't know what to put here. Please change it as you deem necessary-->
-					<span class="descriptor">How?</span> Magic.
-				</p>
-				<p>
-					Join 499 other students of all skill levels on NYU's campus to create something that you've never made before. We'll be feed you, teach you, and give you the resources that you need to create something great. Regardless of whether you're a designer, business person, coder, or some other kind of human, Hack The City will teach you something.
-				</p>
-			</div>
-		</section>
-
-		<section id="faq">
-			<div class="content">
-				<h1>Frequently Asked Questions</h1>
-				<p>Your future questions, answered.</p>
-
-				<div class="row" id="faq-table-header">
-					<span class="selected" id="faq-about">About</span>
-					<span id="faq-travel">Travel</span>
-					<span id="faq-hacking">Hacking</span>
-					<span id="faq-other">Other</span>
-				</div>
-
-				<div id="faq-table">
-					<span class="faq faq-about">
-						<p class="question">What is Hack The City?</p>
-						<p class="answer">
-							A student-organized hackathon, made with the goals of strengthening and advancing the hacker community.
-						</p>
-					</span>
-
-					<span class="faq faq-travel">
-						<p class="question">What should I bring?</p>
-						<p class="answer">
-							We suggest bringing a laptop, charger(s), your student ID, toiletries, a change of clothes, and a sleeping bag.
-						</p>
-					</span>
-					
-					<span class="faq faq-travel">
-						<p class="question">How do I get to NYU?</p>
-						<p class="answer">
-							You can come by bus, train, plane, etc. We aren't doing travel reimbursements or sending out buses as of right now, but that may change.
-						</p>
-					</span>
-
-					<span class="faq faq-about">
-						<p class="question">Am I good enough to attend?</p>
-						<p class="answer">
-							We encourage people of all levels to participate. There will be workshops targeted at anyone from beginners to the more experienced. HTC will be a place to learn new things, meet new people, and make mistakes.
-						</p>
-					</span>
-					
-					<span class="faq faq-about">
-						<p class="question">Will food be provided?</p>
-						<p class="answer">
-							Yes, there'll be lunch and dinner on Saturday, and breakfast and lunch on Sunday. There'll also be snacks throughout the hackathon.
-						</p>
-					</span>
-
-					<span class="faq faq-hacking">
-						<p class="question">How many people can be in each team?</p>
-						<p class="answer">Up to four people.</p>
-					</span>
-					
-					<span class="faq faq-hacking faq-about">
-						<p class="question">What if I don't have a team or idea?</p>
-						<p class="answer">
-							It won't be an issue. We'll be holding an event to help you find team members, and you can brainstorm with other hackers.
-						</p>
-					</span>
-					
-					<span class="faq faq-about">
-						<p class="question">What am I not allowed to bring?</p>
-						<p class="answer">
-							Drugs, alcohol, weapons, etc.
-						</p>
-					</span>
-
-					<span class="faq faq-all">
-						<p class="question">Who can I contact with other questions that I have?</p>
-						<p class="answer">
-							Send an email to VD Thatte at <a href="mailto:vdthatte@nyu.edu">vdthatte@nyu.edu</a>.
-						</p>
-					</span>
-				</div>
-			</div>
-		</section>
-
-		<section id="sponsors">
-			<div class="content">
-				<h1>Sponsors</h1>
-				<p>
-					Check out the companies sponsoring Hack The City this semester. If you would like to sponsor us too, email <a href="mailto:sponsor@hackthe.city">sponsor@hackthe.city</a>.
-				</p>
-				<div class="list-orgs" id="sponsor-list">
-					<p>We'll be updating our list of sponsors closer to the event. Check back soon.</p>
-				</div>
-				</div>
-				<div class="content">
-				<h1>Partners</h1>
-				<p>
-					Hack The City is partnering with the following organizations:
-				</p>
-
-				<div class="list-orgs" id="partner-list">
-				<p>
-					We'll be updating our list of partners closer to the event. Check back soon.
-				</p>
-				</div>
-			</div>
-		</section>
+	<div class="video-holder">
+		<span id="video-overlay"></span>
+		<video loop muted preload autoplay>
+			<!-- TODO: Cross-browser support: Add source tags for other video types-->
+			<source src="./media/background.mp4" type="video/mp4">
+		</video>
 	</div>
+	<div id="entry-point">
+		<div>
+			<span id="main-logo">
+				<img src="images/logo.svg">
+			</span>
+			<div>
+				<span id="main-details">
+					<h1>Hack The City</h1>
+					<h3>April 9th&mdash;10th</h3>
+					<h3>@ New York University</h3>
+				</span>
+				<form id="main-subscribe">
+					<p>Enter your email to get notified when registration opens up:</p>
+					<input type="email" placeholder="Email address">
+					<button class="invalid" type="submit" disabled>Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<header>
+		<span><a class="smoothScroll" href="#about">About</a></span>
+		<span><a class="smoothScroll" href="#faq">FAQ</a></span>
+		<span><a class="smoothScroll" href="#sponsors">Sponsors</a></span>
+		<span><a class="smoothScroll active" href="#">Register</a></span>
+	</header>
+
+	<section id="about">
+		<div class="content">
+			<h1>About</h1>
+			<p>
+				<span class="descriptor">Who?</span> 500 student hackers.
+			</p>
+			<p>
+				<span class="descriptor">What?</span> A hackathon.
+			</p>
+			<p>
+				<span class="descriptor">Where?</span> At New York University (NYU).
+			</p>
+			<p>
+				<span class="descriptor">When?</span> April 9-10, 2016 (<i>tentative</i>).
+			</p>
+			<p>
+				<!-- I don't know what to put here. Please change it as you deem necessary-->
+				<span class="descriptor">How?</span> Magic.
+			</p>
+			<p>
+				Join 499 other students of all skill levels on NYU's campus to create something that you've never made before. We'll be feed you, teach you, and give you the resources that you need to create something great. Regardless of whether you're a designer, business person, coder, or some other kind of human, Hack The City will teach you something.
+			</p>
+		</div>
+	</section>
+
+	<section id="faq">
+		<div class="content">
+			<h1>Frequently Asked Questions</h1>
+			<p>Your future questions, answered.</p>
+
+			<div class="row" id="faq-table-header">
+				<span class="selected" id="faq-about">About</span>
+				<span id="faq-travel">Travel</span>
+				<span id="faq-hacking">Hacking</span>
+				<span id="faq-other">Other</span>
+			</div>
+
+			<div id="faq-table">
+				<span class="faq faq-about">
+					<p class="question">What is Hack The City?</p>
+					<p class="answer">
+						A student-organized hackathon, made with the goals of strengthening and advancing the hacker community.
+					</p>
+				</span>
+
+				<span class="faq faq-travel">
+					<p class="question">What should I bring?</p>
+					<p class="answer">
+						We suggest bringing a laptop, charger(s), your student ID, toiletries, a change of clothes, and a sleeping bag.
+					</p>
+				</span>
+				
+				<span class="faq faq-travel">
+					<p class="question">How do I get to NYU?</p>
+					<p class="answer">
+						You can come by bus, train, plane, etc. We aren't doing travel reimbursements or sending out buses as of right now, but that may change.
+					</p>
+				</span>
+
+				<span class="faq faq-about">
+					<p class="question">Am I good enough to attend?</p>
+					<p class="answer">
+						We encourage people of all levels to participate. There will be workshops targeted at anyone from beginners to the more experienced. HTC will be a place to learn new things, meet new people, and make mistakes.
+					</p>
+				</span>
+				
+				<span class="faq faq-about">
+					<p class="question">Will food be provided?</p>
+					<p class="answer">
+						Yes, there'll be lunch and dinner on Saturday, and breakfast and lunch on Sunday. There'll also be snacks throughout the hackathon.
+					</p>
+				</span>
+
+				<span class="faq faq-hacking">
+					<p class="question">How many people can be in each team?</p>
+					<p class="answer">Up to four people.</p>
+				</span>
+				
+				<span class="faq faq-hacking faq-about">
+					<p class="question">What if I don't have a team or idea?</p>
+					<p class="answer">
+						It won't be an issue. We'll be holding an event to help you find team members, and you can brainstorm with other hackers.
+					</p>
+				</span>
+				
+				<span class="faq faq-about">
+					<p class="question">What am I not allowed to bring?</p>
+					<p class="answer">
+						Drugs, alcohol, weapons, etc.
+					</p>
+				</span>
+
+				<span class="faq faq-all">
+					<p class="question">Who can I contact with other questions that I have?</p>
+					<p class="answer">
+						Send an email to VD Thatte at <a href="mailto:vdthatte@nyu.edu">vdthatte@nyu.edu</a>.
+					</p>
+				</span>
+			</div>
+		</div>
+	</section>
+
+	<section id="sponsors">
+		<div class="content">
+			<h1>Sponsors</h1>
+			<p>
+				Check out the companies sponsoring Hack The City this semester. If you would like to sponsor us too, email <a href="mailto:sponsor@hackthe.city">sponsor@hackthe.city</a>.
+			</p>
+			<div class="list-orgs" id="sponsor-list">
+				<p>We'll be updating our list of sponsors closer to the event. Check back soon.</p>
+			</div>
+			</div>
+			<div class="content">
+			<h1>Partners</h1>
+			<p>
+				Hack The City is partnering with the following organizations:
+			</p>
+
+			<div class="list-orgs" id="partner-list">
+			<p>
+				We'll be updating our list of partners closer to the event. Check back soon.
+			</p>
+			</div>
+		</div>
+	</section>
 
 	<footer>
 		<span>

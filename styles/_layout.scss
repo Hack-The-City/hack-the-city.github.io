@@ -48,6 +48,8 @@ section {
 .content {
 	background-color: $grey-background;
 	box-shadow: 0 0px 5px rgba(0, 0, 0, .08);
+	max-width: 1300px;
+	margin: 0 auto;
 	padding: 3em 1.5em;
 
 	h1 {

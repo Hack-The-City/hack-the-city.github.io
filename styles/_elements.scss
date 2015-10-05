@@ -44,38 +44,38 @@ button {
 }
 
 input {
-	background-color: $primary;
-	border: solid 3px $primary-dark;
+	background-color: $accent-light;
+	border: solid 3px $accent-dark;
 	border-radius: 3em;
-	color: $primary-washed;
+	color: $grey-dark;
 	font-size: 1.2em;
 	padding: .5em;
 	width: 65%;
 }
 
 ::-webkit-input-placeholder {
-	color: $primary-light;
+	color: $white;
 	font-family: 'Ubuntu', sans-serif;
 	font-style: italic;
 	font-weight: 300;
 }
 
 ::-moz-placeholder {
-	color: $primary-light;
+	color: $white;
 	font-family: 'Ubuntu', sans-serif;
 	font-style: italic;
 	font-weight: 300;
 }
 
 :-moz-placeholder {
-	color: $primary-light;
+	color: $white;
 	font-family: 'Ubuntu', sans-serif;
 	font-style: italic;
 	font-weight: 300;
 }
 
 :-ms-input-placeholder {
-	color: $primary-light;
+	color: $white;
 	font-family: 'Ubuntu', sans-serif;
 	font-style: italic;
 	font-weight: 300;
