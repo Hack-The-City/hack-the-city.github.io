@@ -41,13 +41,13 @@ body {
 
 section {
 	background-color: $complement-background;
-	margin-top: 0em;
+	margin-top: 0;
 	padding: 10em 3em;
 }
 
 .content {
 	background-color: $grey-background;
-	box-shadow: 0 0px 5px rgba(0, 0, 0, .08);
+	box-shadow: 0 0 5px rgba(0, 0, 0, .08);
 	max-width: 1300px;
 	margin: 0 auto;
 	padding: 3em 1.5em;

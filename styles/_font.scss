@@ -19,9 +19,9 @@
 
 %header {
 	@extend %font;
+	display: block;
 	font-family: 'Montserrat', sans-serif;
 	width: 100%;
-	display: block;
 }
 
 h1,
