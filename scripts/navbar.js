@@ -8,7 +8,7 @@ function initializeNavigation() {
   }
 
   getSectionYPositions();
-}
+};
 
 function selectMenuOption(option) {
   var options = document.querySelectorAll("header a");
@@ -60,29 +60,35 @@ $(window).on('scroll', function() {
     recalculateNavbarPosition();
   }
 
+  checkAndMoveNavbarPosition();
+
   updateMenuOptionSelection();
 });
 
 
 var deltaLocation;
+var isFixed;
 
 function checkAndMoveNavbarPosition() {
-  var isFixed = false;
   
   recalculateNavbarPosition();
 
   if (!isFixed && $(window).scrollTop() > deltaLocation) {
-    $('header').css({position: "fixed", top: "0px", bottom: ""});
+    $('header').css({position: "fixed", top: "0", bottom: "100vh"});
+    console.log('hell');
     isFixed = true;
-  } else if (isFixed && $(window).scrollTop() < deltaLocation) {
-  $('header').css({position: "absolute", top: "", bottom: "0px"});
-    isFixed = false;
-    $('header').show();
   }
-}
+  else if (isFixed && $(window).scrollTop() <= deltaLocation ) {
+    $('header').css({position: "absolute", top: "100vh", bottom: "0"});
+    console.log('yeah');
+    $('header').show();
+    isFixed = false;
+  }
+};
 
 
 function recalculateNavbarPosition() {
-  deltaLocation = $(window).height() - $('navbar').height()-50;
+  deltaLocation= $(window).height() + $('header').height()/2 -35;
+  // deltaLocation = $(window).height() - $('header').height();
   // console.log($('#navbar').height());
 }
