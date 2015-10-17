@@ -79,7 +79,7 @@ function checkAndMoveNavbarPosition() {
     isFixed = true;
   }
   else if (isFixed && $(window).scrollTop() <= deltaLocation ) {
-    $('header').css({position: "absolute", top: "100vh", bottom: "0"});
+    $('header').css({position: "absolute", top: "93.35vh", bottom: "0"});
     console.log('yeah');
     $('header').show();
     isFixed = false;
@@ -88,7 +88,7 @@ function checkAndMoveNavbarPosition() {
 
 
 function recalculateNavbarPosition() {
-  deltaLocation= $(window).height() + $('header').height()/2 -35;
+  deltaLocation= $(window).height() + $('header').height() - 94 ;
   // deltaLocation = $(window).height() - $('header').height();
   // console.log($('#navbar').height());
 }
