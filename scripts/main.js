@@ -1,5 +1,7 @@
-(function(){
-  initializeNavigation();
-  initializeSplash();
-  initializeFaq();
-})();
+(function() {
+	alignSplashVertically();
+});
+
+function alignSplashVertically() {
+	var splash = document.querySelector("#splash .container")[0];
+}

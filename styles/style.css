@@ -143,19 +143,6 @@ header {
 body {
   min-width: 680px; }
 
-.splash {
-  position: absolute;
-  background-image: url("./../images/background.jpg");
-  background-size: 100%;
-  width: 100%;
-  height: 100%;
-  z-index: 1; }
-
-.buttons {
-  position: relative;
-  display: block;
-  margin: 0 auto; }
-
 section {
   background-color: #f2edef;
   margin-top: 0;
@@ -246,11 +233,24 @@ input {
   font-style: italic;
   font-weight: 300; }
 
+.splash {
+  position: absolute;
+  background-image: url("./../images/background.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center; }
+
 #logo {
   display: block;
   margin: auto; }
 
 .buttons {
+  position: relative;
+  display: block;
+  margin: 0 auto;
   margin-top: 3em;
   text-align: center; }
   .buttons button:first-child {

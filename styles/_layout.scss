@@ -41,20 +41,6 @@ body {
 	min-width: 680px;
 }
 
-.splash {
-	position: absolute;
-	background-image: url("./../images/background.jpg");
-	background-size: 100%;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-}
-
-.buttons {
-	position: relative;
-	display: block;
-	margin: 0 auto;
-}
 section {
 	background-color: $complement-background;
 	margin-top: 0;
