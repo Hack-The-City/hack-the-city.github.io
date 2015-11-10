@@ -70,13 +70,6 @@ a:hover, a:active {
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Montserrat-Bold.ttf"); }
-p, h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Ubuntu', sans-serif; }
 
 p {
   font-family: "Montserrat", sans-serif; }
@@ -87,8 +80,7 @@ h3,
 h4,
 h5,
 h6 {
-  display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
   width: 100%; }
 
 header {
@@ -145,7 +137,12 @@ header {
     background-color: #dce7ea; }
 
 body {
+<<<<<<< Updated upstream
   min-width: 680px; }
+=======
+  min-width: 680px;
+  background-image: url("./images/F01_background_image.png"); }
+>>>>>>> Stashed changes
 
 section {
   background-color: #f2edef;
