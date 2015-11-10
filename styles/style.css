@@ -252,6 +252,9 @@ input {
 #logo {
   display: block;
   margin: auto; }
+  @media (max-width: 770px) {
+    #logo {
+      width: 100vw; } }
 
 .buttons {
   position: relative;

@@ -13,6 +13,9 @@
 #logo {
 	display: block;
 	margin: auto;
+	@media(max-width: 770px) {
+		width: 100vw;
+	}
 }
 
 
