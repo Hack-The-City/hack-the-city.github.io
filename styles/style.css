@@ -204,12 +204,12 @@ video {
   video {
     display: none; } }
 button {
-  background-color: transparent;
-  border: solid 3px #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: solid 5px #fff;
   color: #fff;
   font-size: 1.2em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   padding: .5em 2em;
   text-transform: uppercase; }
 
@@ -249,6 +249,9 @@ input {
 #logo {
   display: block;
   margin: auto; }
+
+.buttons {
+  text-align: center; }
 
 #about {
   background-color: #e8efef; }
