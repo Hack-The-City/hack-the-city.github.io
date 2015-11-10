@@ -125,20 +125,9 @@ header {
   header span {
     align-items: center;
     display: flex; }
-  header a:link, header a:visited {
-    color: #22415b;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;
-    margin-bottom: 0;
-    padding: .3em;
-    text-decoration: none;
-    text-transform: uppercase;
-    vertical-align: middle; }
-  header a:hover, header a:active {
-    background-color: #e8e8e8; }
-  header .active:link, header .active:visited {
-    background-color: #dce7ea; }
+    header span a:link, header span a:visited {
+      color: #fff;
+      text-decoration: none; }
 
 body {
   min-width: 680px; }
