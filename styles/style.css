@@ -200,11 +200,11 @@ video {
     display: none; } }
 button {
   background-color: transparent;
-  border: solid 3px #fff;
+  border: solid 5px #fff;
   color: #fff;
   font-size: 1.2em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   padding: .5em 2em;
   text-transform: uppercase; }
 
