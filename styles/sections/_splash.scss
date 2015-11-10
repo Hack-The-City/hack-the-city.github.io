@@ -15,6 +15,9 @@
 	margin: auto;
 	@media(min-width: 480px) and (max-width: 770px) {
 		width: 80vmin;
+		@media(orientation: landscape) {
+			padding-top: 15vmin;
+		}
 	}
 	@media (max-width: 479px) {
 		width: 100vw;
