@@ -14,27 +14,31 @@ header {
 	span {
 		align-items: center;
 		display: flex;
+		a:link, a:visited {
+			color: $white;
+			text-decoration: none;
+		}
 	}
 
-	a:link, a:visited {
-		color: $primary;
-		display: inline-block;
-		font-family: 'Montserrat', sans-serif;
-		font-size: 1.3em;
-		margin-bottom: 0;
-		padding: .3em;
-		text-decoration: none;
-		text-transform: uppercase;
-		vertical-align: middle;
-	}
+	// a:link, a:visited {
+	// 	color: $primary;
+	// 	display: inline-block;
+	// 	font-family: 'Montserrat', sans-serif;
+	// 	font-size: 1.3em;
+	// 	margin-bottom: 0;
+	// 	padding: .3em;
+	// 	text-decoration: none;
+	// 	text-transform: uppercase;
+	// 	vertical-align: middle;
+	// }
 
-	a:hover, a:active {
-		background-color: $grey-washed;
-	}
+	// a:hover, a:active {
+	// 	background-color: $grey-washed;
+	// }
 
-	.active:link, .active:visited {
-		background-color: $primary-background;
-	}
+	// .active:link, .active:visited {
+	// 	background-color: $primary-background;
+	// }
 }
 
 body {
