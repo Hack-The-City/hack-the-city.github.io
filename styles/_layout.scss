@@ -3,11 +3,12 @@ header {
 	color: $white;
 	top: 0;
 	display: flex;
-	height: 3em;
+	height: 2em;
 	justify-content: space-around;
 	opacity: 1;
 	position: absolute;
 	width: 100%;
+	font-size: 20px;
 
 	span {
 		align-items: center;
