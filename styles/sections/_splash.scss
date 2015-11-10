@@ -34,6 +34,10 @@
 	button:first-child {
 		margin-right: 2em;
 	}
+
+	@media (max-width: 479px) {
+		font-size: 0.7em;
+	}
 }
 
 
