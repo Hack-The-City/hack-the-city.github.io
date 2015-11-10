@@ -4,5 +4,11 @@
 }
 
 .buttons {
+	margin-top: 3em;
 	text-align: center;
+
+	button:first-child {
+		margin-right: 2em;
+	}
 }
+

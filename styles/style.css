@@ -251,7 +251,10 @@ input {
   margin: auto; }
 
 .buttons {
+  margin-top: 3em;
   text-align: center; }
+  .buttons button:first-child {
+    margin-right: 2em; }
 
 #about {
   background-color: #e8efef; }
