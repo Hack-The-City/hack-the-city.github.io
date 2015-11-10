@@ -13,7 +13,10 @@
 #logo {
 	display: block;
 	margin: auto;
-	@media(max-width: 770px) {
+	@media(min-width: 480px) and (max-width: 770px) {
+		width: 80vmin;
+	}
+	@media (max-width: 479px) {
 		width: 100vw;
 	}
 }
@@ -29,3 +32,15 @@
 		margin-right: 2em;
 	}
 }
+
+
+// /* WIDE MOBILE LAYOUT (LANDSCAPE/480PX) 
+// ----------------------------------------------- */
+// @media only screen and (min-width: 480px) and (max-width: 767px) {
+
+// } CLOSE WIDE MOBILE LAYOUT
+// /* MOBILE LAYOUT (PORTRAIT/320PX) 
+// -----------------------------------------------
+// @media only screen and (max-width: 480px) {
+
+// } /* CLOSE MOBILE LAYOUT */
