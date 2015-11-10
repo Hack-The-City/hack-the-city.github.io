@@ -1,398 +1,84 @@
-/*RESET STYLES*/
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400italic|Montserrat");
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  background: transparent;
-  border: 0;
-  font-size: 100%;
-  font-weight: inherit;
-  font-style: normal;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  vertical-align: baseline; }
+/*
+Error: Invalid CSS after "	font-family: ": expected expression (e.g. 1px, bold), was ";"
+        on line 49 of _font.scss
+        from line 3 of ./style.scss
 
-/* HTML5 RESETS FOR OLDER BROWSERS */
-article, aside, figure, figure img, hgroup, footer, header, nav, section {
-  display: block; }
+44: 	font-family: "Lato", sans-serif;
+45: 	color: $white;
+46: }
+47: 
+48: h1 {
+49: 	font-family: ;
+50: }
+51: h1,
+52: h2,
+53: h3,
+54: h4,
 
-/*ol, ul { list-style: none; }*/
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-input, select {
-  vertical-align: middle; }
-
-a img {
-  border: 0; }
-
-:focus {
-  outline: 0; }
-
-a:hover, a:active {
-  outline: none; }
-
-@font-face {
-  font-family: "KeepCalm";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/KeepCalm-Medium.ttf"); }
-p, h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Ubuntu', sans-serif; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Montserrat', sans-serif;
-  width: 100%;
-  display: block; }
-
-h1 {
-  font-size: 5em; }
-
-h2 {
-  font-size: 3.5em;
-  font-weight: 200; }
-
-h3 {
-  font-size: 1.5em; }
-
-p {
-  font-size: 1.2em;
-  line-height: 1.5;
-  padding-bottom: 1em; }
-
-a:link, a:visited {
-  color: #ea2e49; }
-
-a:hover, a:active {
-  color: #1c344c; }
-
-header {
-  background-color: #f9f9f9;
-  bottom: 0;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  height: 3em;
-  justify-content: space-around;
-  opacity: 1;
-  position: absolute;
-  width: 100%; }
-  header span {
-    align-items: center;
-    display: flex; }
-  header a:link, header a:visited {
-    color: #22415b;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;
-    margin-bottom: 0;
-    padding: .3em;
-    text-decoration: none;
-    text-transform: uppercase;
-    vertical-align: middle; }
-  header a:hover, header a:active {
-    background-color: #e8e8e8; }
-  header .active:link, header .active:visited {
-    background-color: #dce7ea; }
-
-body {
-  min-width: 680px; }
-
-section {
-  background-color: #f2edef;
-  margin-top: 0em;
-  padding: 10em 3em; }
-
-.content {
-  background-color: #f9f9f9;
-  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.08);
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 3em 1.5em; }
-  .content h1 {
-    border-bottom: solid 1px #e8e8e8;
-    margin-bottom: .5em;
-    padding-bottom: .2em; }
-  .content + .content {
-    margin-top: 2em; }
-
-footer {
-  background-color: #f9f9f9;
-  color: #1c344c;
-  display: block;
-  padding: 2em; }
-  footer span {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 200px; }
-
-video {
-  opacity: 0;
-  width: 100%; }
-
-@media (max-aspect-ratio: 16 / 9) {
-  video {
-    width: 100%; } }
-@media (max-width: 1640px) {
-  video {
-    width: 150%;
-    left: 25%; } }
-@media (max-width: 1110px) {
-  video {
-    width: 220%;
-    left: 60%; } }
-@media (max-width: 767px) {
-  video {
-    display: none; } }
-button {
-  background-color: #c91739;
-  border: solid 3px #9e1335;
-  border-radius: 3em;
-  color: #f2edef;
-  font-size: 1.2em;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: .02em;
-  padding: .5em 2em;
-  text-transform: uppercase; }
-
-input {
-  background-color: #2d5977;
-  border: solid 3px #22415b;
-  border-radius: 3em;
-  color: #77c4d3;
-  font-size: 1.2em;
-  padding: .5em;
-  width: 65%; }
-
-::-webkit-input-placeholder {
-  color: #3b7696;
-  font-family: 'Ubuntu', sans-serif;
-  font-style: italic;
-  font-weight: 300; }
-
-::-moz-placeholder {
-  color: #3b7696;
-  font-family: 'Ubuntu', sans-serif;
-  font-style: italic;
-  font-weight: 300; }
-
-:-moz-placeholder {
-  color: #3b7696;
-  font-family: 'Ubuntu', sans-serif;
-  font-style: italic;
-  font-weight: 300; }
-
-:-ms-input-placeholder {
-  color: #3b7696;
-  font-family: 'Ubuntu', sans-serif;
-  font-style: italic;
-  font-weight: 300; }
-
-.video-holder {
-  background-color: #22415b;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -100; }
-
-#video-overlay {
-  position: absolute;
-  display: block;
-  top: 0;
-  background-color: #1c344c;
-  opacity: .5;
-  width: 100%;
-  height: 100%; }
-
-#entry-point {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  color: #fff; }
-  #entry-point > div {
-    position: relative;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.2);
-    align-items: center;
-    align-self: center;
-    padding: 50px;
-    width: 100%;
-    justify-content: center; }
-
-#main-logo {
-  display: inline-block;
-  width: 20%;
-  vertical-align: middle;
-  margin-right: 5%; }
-  #main-logo img {
-    width: 100%; }
-
-@media (max-width: 1180px) {
-  #main-logo {
-    width: 25%; } }
-@media (max-width: 960px) {
-  #entry-point > div {
-    flex-wrap: wrap; }
-
-  #main-logo {
-    display: block;
-    margin-bottom: 1.5em; } }
-#main-details {
-  display: inline-block;
-  vertical-align: middle; }
-
-#main-subscribe {
-  margin-top: 2em;
-  align-self: flex-end; }
-  #main-subscribe p {
-    font-weight: 300;
-    word-spacing: .1em; }
-  #main-subscribe .invalid {
-    background-color: #818181;
-    color: #f2edef;
-    text-transform: lowercase;
-    font-style: italic;
-    font-weight: 200;
-    border: solid 3px #515151; }
-  #main-subscribe .valid {
-    text-transform: lowercase;
-    font-weight: 200; }
-
-#about {
-  background-color: #e8efef; }
-  #about h1 {
-    color: #2a4b4c; }
-  #about p {
-    font-size: 1.5em; }
-  #about p:last-child {
-    border-top: solid 1px #e8e8e8;
-    padding-top: 1.5em;
-    font-size: 1.1em;
-    line-height: 2; }
-
-.descriptor {
-  font-style: italic;
-  color: #c91739;
-  margin-right: .7em; }
-
-#faq {
-  background-color: #dce7ea; }
-  #faq h1 {
-    color: #152838;
-    font-size: 4em; }
-
-#faq-table-header {
-  display: flex;
-  font-family: 'Ubuntu', sans-serif;
-  background-color: #f2edef;
-  color: #c91739;
-  align-content: stretch;
-  border-bottom: solid 1px #fff;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.08);
-  margin-top: 2em; }
-  #faq-table-header span {
-    padding: .5em;
-    flex-grow: 1;
-    display: inline-block;
-    text-transform: capitalize;
-    border-right: 1px solid #fff;
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: 700;
-    letter-spacing: .05em; }
-  #faq-table-header span:last-child {
-    border-right: none; }
-  #faq-table-header span:hover {
-    background-color: #ea2e49;
-    color: #fff; }
-  #faq-table-header .selected {
-    background-color: #c91739;
-    color: #f2edef; }
-
-#faq-table {
-  background-color: #f9f9f9;
-  font-family: 'Ubuntu', sans-serif;
-  padding: 1em .5em 0 .5em;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.08); }
-  #faq-table .faq {
-    display: inline-block;
-    width: 30%;
-    margin-bottom: 1em;
-    padding: 0 .5em;
-    vertical-align: top;
-    border-right: solid 1px #e8e8e8; }
-    #faq-table .faq:nth-child(3n) {
-      border-right: none; }
-    #faq-table .faq .question {
-      padding-bottom: .2em; }
-    #faq-table .faq .answer {
-      font-size: 1em; }
-
-@media (max-width: 1080px) {
-  #faq h1 {
-    font-size: 2.6em; }
-
-  #faq-table .faq {
-    width: 40%;
-    padding: 0 2em 0 1em;
-    border-right: none; } }
-@media (max-width: 770px) {
-  #faq h1 {
-    font-size: 2.2em; }
-
-  #faq-table .faq {
-    width: 99%; } }
-#sponsors {
-  background-color: #f2edef; }
-  #sponsors h1 {
-    color: #56061d; }
-
-.list-orgs {
-  border: solid 2px #e8e8e8;
-  display: block;
-  padding: 2em;
-  text-align: center; }
-  .list-orgs p {
-    color: #818181;
-    font-style: italic;
-    padding-bottom: 0; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+_font.scss:49
+./style.scss:3
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:1164:in `expected'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/script/lexer.rb:221:in `expected!'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/script/parser.rb:573:in `assert_expr'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/script/parser.rb:62:in `parse'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:1024:in `sass_script'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:877:in `value!'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:750:in `block in try_declaration'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:1138:in `call'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:1138:in `rethrow'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:763:in `try_declaration'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:693:in `declaration_or_ruleset'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:658:in `block_child'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:647:in `block_contents'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:639:in `block'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:633:in `ruleset'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:657:in `block_child'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:650:in `block_contents'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:117:in `stylesheet'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:42:in `parse'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/engine.rb:403:in `_to_tree'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/engine.rb:309:in `to_tree'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:88:in `block in with_import'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:88:in `with_import'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `each'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:312:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"	font-family: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 49 of _font.scss\A         from line 3 of ./style.scss\A \A 44: 	font-family: \"Lato\", sans-serif;\A 45: 	color: $white;\A 46: }\A 47: \A 48: h1 {\A 49: 	font-family: ;\A 50: }\A 51: h1,\A 52: h2,\A 53: h3,\A 54: h4,"; }

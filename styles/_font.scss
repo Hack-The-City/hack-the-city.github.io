@@ -35,8 +35,8 @@
 }
 
 %header {
-	display: block;
-	font-family: 'Montserrat', sans-serif;
+	@extend %font;
+	font-family: 'Lato', sans-serif;
 	width: 100%;
 }
 
