@@ -1,236 +1,68 @@
 /*
-Flex-box-specific cross-browser support mixins
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 30 of _layout.scss
+        from line 5 of ./style.scss
+
+25: 	}
+26: 
+27: body {
+28: 	min-width: 680px;
+29: }
+
+Backtrace:
+_layout.scss:30
+./style.scss:5
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:1164:in `expected'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:1098:in `expected'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:1093:in `tok!'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:640:in `block'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:633:in `ruleset'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:657:in `block_child'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:647:in `block_contents'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:117:in `stylesheet'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/scss/parser.rb:42:in `parse'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/engine.rb:403:in `_to_tree'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/engine.rb:309:in `to_tree'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:88:in `block in with_import'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:88:in `with_import'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `each'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
+/home/brian_chuk/.rvm/gems/ruby-1.9.3-p547/gems/listen-2.7.9/lib/listen/listener.rb:312:in `block in _start_wait_thread'
 */
-/*RESET STYLES*/
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,400italic|Montserrat");
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  background: transparent;
-  border: 0;
-  font-size: 100%;
-  font-weight: inherit;
-  font-style: normal;
-  margin: 0;
-  outline: 0;
-  padding: 0;
-  vertical-align: baseline; }
-
-/* HTML5 RESETS FOR OLDER BROWSERS */
-article, aside, figure, figure img, hgroup, footer, header, nav, section {
-  display: block; }
-
-/*ol, ul { list-style: none; }*/
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-input, select {
-  vertical-align: middle; }
-
-a img {
-  border: 0; }
-
-:focus {
-  outline: 0; }
-
-a:hover, a:active {
-  outline: none; }
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/Lato-Light.ttf"); }
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 100;
-  src: url("../fonts/Lato-Hairline.ttf"); }
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Montserrat-Regular.ttf"); }
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Montserrat-Bold.ttf"); }
-p {
-  font-family: "Montserrat", sans-serif; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Lato', sans-serif;
-  width: 100%; }
-
-header {
-  font-family: "Lato", sans-serif;
-  color: #fff; }
-
-h1 {
-  font-size: 5em; }
-
-h2 {
-  font-size: 3.5em;
-  font-weight: 200; }
-
-h3 {
-  font-size: 1.5em; }
-
-p {
-  font-size: 1.2em;
-  line-height: 1.5;
-  padding-bottom: 1em; }
-
-a:link, a:visited {
-  color: #ea2e49; }
-
-a:hover, a:active {
-  color: #1c344c; }
-
-header {
-  background-color: #000;
-  color: #fff;
-  top: 0;
-  display: flex;
-  height: 2em;
-  justify-content: space-around;
-  opacity: 1;
-  position: absolute;
-  width: 100%;
-  font-size: 20px;
-  z-index: 10; }
-  header span {
-    align-items: center;
-    display: flex; }
-    header span a:link, header span a:visited {
-      color: #fff;
-      text-decoration: none; }
-
-body {
-  min-width: 680px; }
-
-video {
-  opacity: 0;
-  width: 100%; }
-
-@media (max-aspect-ratio: 16 / 9) {
-  video {
-    width: 100%; } }
-@media (max-width: 1640px) {
-  video {
-    width: 150%;
-    left: 25%; } }
-@media (max-width: 1110px) {
-  video {
-    width: 220%;
-    left: 60%; } }
-@media (max-width: 767px) {
-  video {
-    display: none; } }
-button {
-  background-color: rgba(0, 0, 0, 0.8);
-  border: solid 5px #fff;
-  color: #fff;
-  font-size: 1.2em;
-  font-style: normal;
-  font-weight: 700;
-  padding: .5em 2em;
-  text-transform: uppercase; }
-
-input {
-  background-color: #2d5977;
-  border: solid 3px #22415b;
-  border-radius: 3em;
-  color: #77c4d3;
-  font-size: 1.2em;
-  padding: .5em;
-  width: 65%; }
-
-::-webkit-input-placeholder {
-  color: #3b7696;
-  font-family: 'Ubuntu', sans-serif;
-  font-style: italic;
-  font-weight: 300; }
-
-::-moz-placeholder {
-  color: #3b7696;
-  font-family: 'Ubuntu', sans-serif;
-  font-style: italic;
-  font-weight: 300; }
-
-:-moz-placeholder {
-  color: #3b7696;
-  font-family: 'Ubuntu', sans-serif;
-  font-style: italic;
-  font-weight: 300; }
-
-:-ms-input-placeholder {
-  color: #3b7696;
-  font-family: 'Ubuntu', sans-serif;
-  font-style: italic;
-  font-weight: 300; }
-
-.splash {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  position: absolute;
-  background-image: url("./../images/background.jpg");
-  width: 100%;
-  height: 100%;
-  z-index: 1; }
-
-#logo {
-  display: block;
-  margin: auto; }
-  @media (max-width: 770px) {
-    #logo {
-      width: 100vw; } }
-
-.buttons {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  margin-top: 3em;
-  text-align: center; }
-  .buttons button:first-child {
-    margin-right: 2em; }
-
-/*# sourceMappingURL=style.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 30 of _layout.scss\A         from line 5 of ./style.scss\A \A 25: 	}\A 26: \A 27: body {\A 28: 	min-width: 680px;\A 29: }"; }
