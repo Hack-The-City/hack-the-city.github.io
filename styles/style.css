@@ -70,6 +70,8 @@ a:hover, a:active {
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Montserrat-Bold.ttf"); }
+p {
+  font-family: 'Ubuntu', sans-serif; }
 
 p {
   font-family: "Montserrat", sans-serif; }
@@ -137,12 +139,8 @@ header {
     background-color: #dce7ea; }
 
 body {
-<<<<<<< Updated upstream
-  min-width: 680px; }
-=======
   min-width: 680px;
   background-image: url("./images/F01_background_image.png"); }
->>>>>>> Stashed changes
 
 section {
   background-color: #f2edef;
@@ -192,14 +190,12 @@ video {
   video {
     display: none; } }
 button {
-  background-color: #c91739;
-  border: solid 3px #9e1335;
-  border-radius: 3em;
-  color: #f2edef;
+  background-color: transparent;
+  border: solid 3px #fff;
+  color: #fff;
   font-size: 1.2em;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: .02em;
   padding: .5em 2em;
   text-transform: uppercase; }
 
