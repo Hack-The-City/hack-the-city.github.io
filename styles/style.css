@@ -199,7 +199,7 @@ video {
   video {
     display: none; } }
 button {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.8);
   border: solid 5px #fff;
   color: #fff;
   font-size: 1.2em;
@@ -244,6 +244,9 @@ input {
 #logo {
   display: block;
   margin: auto; }
+
+.buttons {
+  text-align: center; }
 
 #about {
   background-color: #e8efef; }
