@@ -37,3 +37,10 @@ Flex-box-specific cross-browser support mixins
 		-ms-align-content: $value;
 			align-content: $value;
 }
+
+@mixin background-size($value) {
+	-webkit-background-size: $value;
+	   -moz-background-size: $value;
+		 -o-background-size: $value;
+			background-size: $value;
+}
