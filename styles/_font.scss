@@ -3,27 +3,51 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,300);
 
 @font-face {
-  font-family: "KeepCalm";
+  font-family: "Lato";
   font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/KeepCalm-Medium.ttf");
+  font-weight: 300;
+  src: url("../fonts/Lato-Light.ttf");
 }
 
-%font {
-	font-family: 'Ubuntu', sans-serif;
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Lato-Hairline.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Montserrat-Bold.ttf");
 }
 
 %text {
-	@extend %font;
+	font-family: "Montserrat", sans-serif;
 }
 
 %header {
-	@extend %font;
 	display: block;
 	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 }
 
+header {
+	font-family: "Lato", sans-serif;
+	color: $white;
+}
+
+h1 {
+	font-family: ;
+}
 h1,
 h2,
 h3,
