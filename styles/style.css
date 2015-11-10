@@ -140,8 +140,16 @@ header {
     background-color: #dce7ea; }
 
 body {
-  min-width: 680px;
-  background-image: url("./images/F01_background_image.png"); }
+  min-width: 680px; }
+
+.splash {
+  background-image: url("./../images/F01_background_image.png");
+  background-size: 100%; }
+
+.buttons {
+  position: relative;
+  display: block;
+  margin: 0 auto; }
 
 section {
   background-color: #f2edef;

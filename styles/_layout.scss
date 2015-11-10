@@ -38,9 +38,18 @@ header {
 
 body {
 	min-width: 680px;
-	background-image: url("./images/F01_background_image.png")
 }
 
+.splash {
+	background-image: url("./../images/F01_background_image.png");
+	background-size: 100%;
+}
+
+.buttons {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
 section {
 	background-color: $complement-background;
 	margin-top: 0;
