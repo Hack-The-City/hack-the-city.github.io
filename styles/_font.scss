@@ -30,13 +30,19 @@
   src: url("../fonts/Montserrat-Bold.ttf");
 }
 
+%font {
+	font-family: 'Ubuntu', sans-serif;
+}
+
 %text {
+	@extend %font;
 	font-family: "Montserrat", sans-serif;
 }
 
 %header {
 	@extend %font;
-	font-family: 'Lato', sans-serif;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 }
 
