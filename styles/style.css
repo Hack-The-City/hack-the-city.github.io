@@ -24,6 +24,37 @@ time, mark, audio, video {
   padding: 0;
   vertical-align: baseline; }
 
+/*MAILCHIMP*/
+#mc_embed_signup {
+	display: none;
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+
+#mc_embed_signup form {
+	text-align: center;
+}
+
+#mc_embed_signup input[type="text"] {
+    width: 200px;
+    height: 20px;
+    padding-right: 50px;
+}
+
+#mc_embed_signup input {
+	background-color: #fff;
+}
+
+#mc_embed_signup input[type="submit"] {
+    margin-left: -118px;
+    height: 40px;
+    width: 112px;
+    background: #4CC3C9;
+    color: white;
+    border: 0;
+    -webkit-appearance: none;
+}
+
 /* HTML5 RESETS FOR OLDER BROWSERS */
 article, aside, figure, figure img, hgroup, footer, header, nav, section {
   display: block; }
@@ -252,3 +283,4 @@ button{
       font-size: 0.7em; } }
 
 /*# sourceMappingURL=style.css.map */
+

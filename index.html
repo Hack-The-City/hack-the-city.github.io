@@ -12,6 +12,10 @@
 	<!-- <link rel="shortcut icon" href=""> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+	<!-- mailchimp -->
+	<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="scripts/main.js" defer></script>
 </head>
@@ -31,11 +35,26 @@
 			<div class="container">
 				<img id="logo" src="./images/HTC_Web_Logo.png">
 				<div class="buttons">
-					<a href="mailto:info@hackthe.city"><button>QUESTIONS</button></a>
+					<button id="show">PRE-REGISTER</button>
 					<a href="mailto:sponsors@hackthe.city"><button>SPONSOR</button></a>
 				</div>
-			</div>
+			    <!-- Begin MailChimp Signup Form -->					
+				<div id="mc_embed_signup">
+				<form action="http://city.us11.list-manage.com/subscribe/post?u=6c573c250a31882a64feea74b&amp;id=195aaf4a1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</form>
+				</div>	
+				<!-- End MailChimp Signup Form -->				
 		</div>
 	</main>
 </body>
 </html>
+
+<script>
+$(document).ready(function(){
+    $("#show").click(function(){
+        $("#mc_embed_signup").slideDown();
+    });
+});
+</script>
