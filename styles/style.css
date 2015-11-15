@@ -131,12 +131,13 @@ header {
   @media (max-width: 500px) {
     header {
       font-size: 16px; } }
-  @media (max-width: 415px){
-    header{
+  @media (max-width: 415px) {
+    header {
       font-size: 12px; } }
 
 body {
-  min-width: 680px; }
+  min-width: 680px;
+  background-color: black; }
 
 video {
   opacity: 0;
@@ -237,20 +238,15 @@ input {
     #logo {
       width: 100vw; } }
 
-button{
-  text-align:center;
-}
-
 .buttons {
+  position: relative;
+  display: block;
+  margin: 0 auto;
   margin-top: 3em;
   text-align: center; }
   .buttons button:first-child {
     margin-right: 2em; }
   @media (max-width: 479px) {
-    .buttons button:first-child{
-      margin-left: 1em;
-      margin-right: 1em;
-    }
     .buttons {
       font-size: 0.7em; } }
 
