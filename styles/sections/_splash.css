@@ -1,0 +1,70 @@
+/*
+Error: Undefined mixin 'background-size'.
+        on line 2 of styles/sections/_splash.scss, in `background-size'
+        from line 2 of styles/sections/_splash.scss
+
+1: .splash {
+2: 	@include background-size(cover);
+3: 	@include display-flex();
+4: 	@include justify-content(center);
+5: 	@include align-items(center);
+6: 	position: absolute;
+7: 	// background-image: url("./../images/background.jpg"); Temporary change
+
+Backtrace:
+styles/sections/_splash.scss:2:in `background-size'
+styles/sections/_splash.scss:2
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:349:in `block in visit_mixin'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/stack.rb:98:in `with_mixin'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:347:in `visit_mixin'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `map'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/listen-2.10.1/lib/listen/listener.rb:305:in `call'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/listen-2.10.1/lib/listen/listener.rb:305:in `_process_changes'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/listen-2.10.1/lib/listen/listener.rb:269:in `block in _wait_for_changes'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/listen-2.10.1/lib/listen/listener.rb:252:in `loop'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/listen-2.10.1/lib/listen/listener.rb:252:in `_wait_for_changes'
+/Users/dana/.rvm/gems/ruby-2.2.1/gems/listen-2.10.1/lib/listen/listener.rb:341:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'background-size'.\A         on line 2 of styles/sections/_splash.scss, in `background-size'\A         from line 2 of styles/sections/_splash.scss\A \A 1: .splash {\A 2: 	@include background-size(cover);\A 3: 	@include display-flex();\A 4: 	@include justify-content(center);\A 5: 	@include align-items(center);\A 6: 	position: absolute;\A 7: 	// background-image: url(\"./../images/background.jpg\"); Temporary change"; }
