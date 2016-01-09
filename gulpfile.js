@@ -34,7 +34,7 @@ gulp.task('babelify', function () {
 gulp.task('sass', function() {
   return sass(paths.styles)
     .on('error', sass.logError)
-    .pipe(gulp.dest('./style/'))
+    .pipe(gulp.dest('./res/styles/'))
     .pipe(minifyCss({
         keepSpecialComments: 0
     }))
@@ -51,7 +51,7 @@ gulp.task('compress-png', function() {
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest('./res/img/'));
+    .pipe(gulp.dest('./res/imgs/'));
 });
 
 gulp.task('watch', function() {
@@ -60,4 +60,4 @@ gulp.task('watch', function() {
   gulp.watch(paths.styles, ['sass']);
 });
 
-gulp.task('build',['babelify', 'watch']);
+gulp.task('build',['sass', 'babelify', 'watch']);
