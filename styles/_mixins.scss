@@ -1,50 +1,3 @@
-/*
-Flex-box-specific cross-browser support mixins
-*/
-
-@mixin display-flex {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-}
-
-@mixin align-items($value) {
-	-webkit-align-items: $value;
-	   -moz-align-items: $value;
-		-ms-align-items: $value;
-			align-items: $value;
-}
-
-@mixin justify-content($value) {
-	-webkit-justify-content: $value;
-	   -moz-justify-content: $value;
-		-ms-justify-content: $value;
-			justify-content: $value;
-}
-
-@mixin flex-flow($value) {
-	-webkit-flex-flow: $value;
-	   -moz-flex-flow: $value;
-		-ms-flex-flow: $value;
-			flex-flow: $value;
-}
-
-@mixin align-content($value) {
-	-webkit-align-content: $value;
-	   -moz-align-content: $value;
-		-ms-align-content: $value;
-			align-content: $value;
-}
-
-@mixin background-size($value) {
-	-webkit-background-size: $value;
-	   -moz-background-size: $value;
-		 -o-background-size: $value;
-			background-size: $value;
-}
-
 /*****************************
 * General
 *****************************/
@@ -115,8 +68,15 @@ Flex-box-specific cross-browser support mixins
 
 @mixin flex-direction($val) {
 	-webkit-flex-direction: $val;
-	-ms-flex-direction: $val;
-	flex-direction: $val;
+			-ms-flex-direction: $val;
+					flex-direction: $val;
+}
+
+@mixin flex-flow($value) {
+	-webkit-flex-flow: $value;
+	   -moz-flex-flow: $value;
+			-ms-flex-flow: $value;
+					flex-flow: $value;
 }
 
 @mixin align-items($val) {
@@ -127,13 +87,24 @@ Flex-box-specific cross-browser support mixins
 }
 
 @mixin justify-content($val) {
-	-webkit-justify-content: $val;
-	justify-content: $val;
+	-webkit-justify-content: $value;
+	   -moz-justify-content: $value;
+			-ms-justify-content: $value;
+					justify-content: $value;
 }
 
 @mixin align-self($val) {
 	-webkit-align-self: $val;
-	align-self: $val;
+		 -moz-align-self: $val;
+			-ms-align-self: $val;
+					align-self: $val;
+}
+
+@mixin align-content($value) {
+	-webkit-align-content: $value;
+	   -moz-align-content: $value;
+		-ms-align-content: $value;
+			align-content: $value;
 }
 
 @mixin flex-wrap($val) {

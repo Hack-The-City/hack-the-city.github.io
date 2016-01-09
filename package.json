@@ -1,0 +1,20 @@
+{
+  "name": "hackthecity",
+  "version": "1.0.0",
+  "description": "A hackathon",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hack-The-City/hack-the-city.github.io.git"
+  },
+  "author": "Hack the City Tech Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hack-The-City/hack-the-city.github.io/issues"
+  },
+  "homepage": "https://github.com/Hack-The-City/hack-the-city.github.io#readme"
+}
