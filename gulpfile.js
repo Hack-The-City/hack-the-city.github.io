@@ -43,6 +43,17 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./style/'));
 });
 
+// Compress PNG images
+gulp.task('compress-png', function() {
+  return gulp.src(paths.images)
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
+    }))
+    .pipe(gulp.dest('./res/img/'));
+});
+
 gulp.task('watch', function() {
   gulp.watch(paths.babel_files, ['babelify']);
   gulp.watch(paths.app, ['babelify']);

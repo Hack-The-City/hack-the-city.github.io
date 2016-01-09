@@ -1,6 +1,6 @@
 import React from 'react';
 import {Router, Route} from 'react-router';
-import ReactDOM frm 'react-dom';
+import ReactDOM from 'react-dom';
 
 // Import components
 import Home from './components/home';
