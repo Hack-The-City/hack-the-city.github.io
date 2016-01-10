@@ -13,34 +13,34 @@ const gulp = require('gulp'),
       uglify = require('gulp-uglify');
 
 const paths = {
-  app: './app.jsx',
-  styles: './res/styles/*.scss',
+  app: './app/app.jsx',
+  styles: './app/styles/*.scss',
   babel_files: './*/*.jsx'
 };
 
 gulp.task('babelify', function () {
   return browserify({
     extensions: ['.jsx', '.js'],
-    entries: './app.jsx'
+    entries: './app/app.jsx'
   })
     .transform(babelify.configure({ ignore: /(node_modules)/ }))
     .bundle()
     .on("error", function (err) { console.log("Error : " + err.message); })
-    .pipe(source('app.js'))
-    .pipe(gulp.dest('./res/scripts/'));
+    .pipe(source('bundle.js'))
+    .pipe(gulp.dest('./public/'));
 });
 
 // Compile SCSS files
 gulp.task('sass', function() {
   return sass(paths.styles)
     .on('error', sass.logError)
-    .pipe(gulp.dest('./res/styles/'))
+    .pipe(gulp.dest('./styles/'))
     .pipe(minifyCss({
         keepSpecialComments: 0
     }))
     .on('error', function(err) {console.log("You messed up your CSS: " + err.message); })
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(gulp.dest('./style/'));
+    .pipe(gulp.dest('./public/'));
 });
 
 // Compress PNG images
@@ -51,7 +51,7 @@ gulp.task('compress-png', function() {
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest('./res/imgs/'));
+    .pipe(gulp.dest('./public/imgs/'));
 });
 
 gulp.task('watch', function() {

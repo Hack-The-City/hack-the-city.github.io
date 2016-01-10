@@ -11,7 +11,7 @@
     "react-engine": "^1.6.0"
   },
   "scripts": {
-    "start": "http-server ./",
+    "start": "http-server ./public/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
