@@ -3,12 +3,8 @@
   "version": "1.0.0",
   "description": "A hackathon",
   "main": "index.js",
-  "dependencies": {
-    "express": "^4.12.3",
-    "react": "^0.14.6",
-    "node-jsx": "^0.13.3",
-    "react-router": "^0.13.5",
-    "react-engine": "^1.6.0"
+  "engines": {
+    "node": "v4.2.2"
   },
   "scripts": {
     "start": "http-server ./public/",
@@ -51,5 +47,12 @@
     "react-engine": "^2.6.2",
     "redux-devtools": "^3.0.1",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "express": "^4.12.3",
+    "react": "^0.14.6",
+    "node-jsx": "^0.13.3",
+    "react-router": "^0.13.5",
+    "react-engine": "^1.6.0"
   }
 }

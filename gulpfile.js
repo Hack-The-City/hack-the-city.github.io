@@ -15,7 +15,10 @@ const gulp = require('gulp'),
 const paths = {
   app: './app/app.jsx',
   styles: './app/styles/*.scss',
-  babel_files: './*/*.jsx'
+  stylesDestination: './public/',
+  imgs: './app/imgs/*',
+  imgsDestination: './public/imgs/',
+  babel_files: './app/*/*.jsx'
 };
 
 gulp.task('babelify', function () {
@@ -34,7 +37,7 @@ gulp.task('babelify', function () {
 gulp.task('sass', function() {
   return sass(paths.styles)
     .on('error', sass.logError)
-    .pipe(gulp.dest('./styles/'))
+    .pipe(gulp.dest('./public/'))
     .pipe(minifyCss({
         keepSpecialComments: 0
     }))

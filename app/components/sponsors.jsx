@@ -2,11 +2,10 @@ import React, {Component} from 'react';
 
 // Custom components
 
-export default class Nav extends Component {
+export default class Sponsors extends Component {
   render() {
     return (
-      <nav className="" role="navigation">
-      </nav>
+      <div>HI</div>
     );
   }
 }
