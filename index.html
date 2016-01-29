@@ -34,31 +34,23 @@
 	<main>
 		<div class="splash">
 			<div class="container">
-				<img id="logo" src="./images/HTC_Web_Logo.png">
-				<div class="buttons">
+				<!-- <img id="logo" src="./images/HTC_Web_Logo.png"> -->
+<!-- 				<div class="buttons">
 					<button id="show">PRE-REGISTER</button>
 					<a href="mailto:sponsors@hackthe.city"><button>SPONSOR</button></a>
-				</div>
-			    <!-- Begin MailChimp Signup Form -->					
+				</div> -->
+			    <!-- Begin MailChimp Signup Form -->	
+				<div id="banner"><h2>Welcome to the city.</h2></div>			
 				<div id="mc_embed_signup">
 				<form action="http://city.us11.list-manage.com/subscribe/post?u=6c573c250a31882a64feea74b&amp;id=195aaf4a1b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-					<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email..." required>
+					<input type="submit" value="PRE-REGISTER" name="subscribe" id="mc-embedded-subscribe" class="button">
 				</form>
 				</div>	
+				<div id="sponsor"><h3>For sponsorship inquiries contact <a href="mailto:sponsors@hackthe.city" "">sponsors@hackthe.city</a></h3></div>							
 				<!-- End MailChimp Signup Form -->					
 		</div>
 	</main>
 </body>
 </html>
 
-<script>
-$(document).ready(function(){
-    $("#show").click(function(){
-        $("#mc_embed_signup").slideDown();
-    });
-    $("#mc-embedded-subscribe").click(function() {
-        $("#mc_embed_signup").slideUp();
-    });
-});
-</script>

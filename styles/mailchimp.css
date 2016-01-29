@@ -1,8 +1,27 @@
+#banner h2 {
+	color: white;
+	text-align: center;
+}
+
+#sponsor h3 {
+	color: white;
+	text-align: center;	
+}
+
+#sponsor {
+	margin-bottom: 50px;
+}
+
 /*MAILCHIMP*/
 #mc_embed_signup {
-	display: none;
-	margin-top: 15px;
-	margin-bottom: 50px;
+	/*display: none;*/
+	padding-top: 35px;
+	padding-bottom: 20px;
+}
+
+#mc_embed_signup h3 {
+	color: white;
+	text-align: center;
 }
 
 #mc_embed_signup form {
@@ -31,9 +50,10 @@
 
 #mc_embed_signup input[type="submit"] {
     margin-left: -118px;
-    height: 42px;
-    width: 112px;
-    background: #45B3BB;
+    height: 39px;
+    width: 160px;
+    font-weight: bold;
+    background: #ED1C24;
     color: white;
     border: 0;
     -webkit-appearance: none;
@@ -41,6 +61,7 @@
 
 #mc_embed_signup input[type="email"] {
 	color: black;
+	border: none;
 }
 
 #mc_embed_signup ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
