@@ -50,6 +50,7 @@
 
 #mc_embed_signup input[type="submit"] {
     margin-left: -118px;
+    box-sizing: border-box;
     height: 2.2em;
     width: 160px;
     font-weight: bold;
@@ -62,6 +63,8 @@
 #mc_embed_signup input[type="email"] {
 	color: black;
 	border: none;
+    box-sizing: border-box;
+    height: 2.2em;
 }
 
 #mc_embed_signup ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
