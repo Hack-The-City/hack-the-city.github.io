@@ -40,8 +40,14 @@
 	    /*padding-right: 50px;*/
 	}
 	#mc_embed_signup input[type="submit"] {
-	    height: 34px !important;
+	    height: 34px;
+	}
+	#banner h2 {
+		font-size: 4em;
 	}	
+	#sponsor h3 {
+		font-size: 1.3em;
+	}
 }
 
 #mc_embed_signup input {
@@ -64,7 +70,7 @@
 	color: black;
 	border: none;
     box-sizing: border-box;
-    height: 2.2em;
+    /*height: 2.2em;*/
 }
 
 #mc_embed_signup ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
